@@ -1,0 +1,222 @@
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
+.trioImages {
+  width: 100%;
+  height: auto;
+}
+
+
+#history {
+  margin: 10px;
+	padding: 25px;
+  padding-bottom: 0;
+}
+
+#history h1 {
+  text-align: center;
+}
+
+#historyimage img {
+  width: 50%;
+  height: 300px;
+  float: right;
+  margin: 0;
+  margin-left: 35px;
+  padding: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#historytext {
+  padding: 35px;
+  margin: 10px;
+  padding-top: 0;
+}
+
+#contentimage img {
+	width: 50%;
+  height: 300px;
+  float: left;
+  margin: 0;
+  margin-right: 35px;
+  padding: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+} 
+
+#contenttext li {
+  padding-top: 0;
+  padding-left: 35px;
+  margin: 10px;
+}
+
+/*Slideshow*/
+* {box-sizing:border-box}
+
+.slideshow-container {
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: static;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  text-align: center;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+  text-shadow: 
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*Box Model*/
+#box1 {
+	height: 300px;
+  width: 1000px;
+  margin-left: 25px;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+  border-radius: 15px;
+}
+
+#box2 {
+  width: 1000px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: 25px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+  border-radius: 15px;
+}
+
+/*Background*/
+html, body {
+  width: 100%;
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+	background-image: linear-gradient(#1e5263, #899b30);
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Raleway, serif;
+}
+
+/*Nav Bar*/
+div.container {
+  font-family: Raleway;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+div.container a {
+  color: #fff;
+  text-decoration: none;
+  font: 20px Raleway;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+div.container a.activenav{
+  color: white;
+}
+
+.green {
+  background: #1e5263;
+}
+
+div.highlightTextIn a:before {
+    position: absolute;
+    color: #FFF;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+} 
+
+div.highlightTextIn a:hover:not(.activenav):before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+div.highlightTextIn a {
+    color: rgba(0, 0, 0, 0.4); 
+}
+
+div.highlightTextIn a:before {
+    transform: scale(1.2);
+} 
