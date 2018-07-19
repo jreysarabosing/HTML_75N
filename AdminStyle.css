@@ -1,0 +1,240 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+div.container {
+  	font-family: Raleway;
+ 	  margin: 0 auto;
+  	padding: 20px;
+  	text-align: left;
+  	position: fixed;
+  	top: 0;
+  	width: 100%;
+  	z-index: 3;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+div.container a {
+  	color: #fff;
+  	text-decoration: none;
+  	font: 20px Raleway;
+  	margin: 0px 10px;
+  	padding: 10px 10px;
+  	position: relative;
+  	z-index: 0;
+  	cursor: pointer;
+}
+
+div.container a.activenav{
+  	color: white;
+}
+		
+.green {
+	background: #1e5263;
+}
+		
+div.highlightTextIn a:before {
+	position: absolute;
+    color: #FFF;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+} 
+
+div.highlightTextIn a:hover:not(.activenav):before {
+	transform: scale(1);
+	opacity: 1;
+}
+		
+div.highlightTextIn a {
+	color: rgba(0, 0, 0, 0.4); 
+}
+		
+div.highlightTextIn a:before {
+	transform: scale(1.2);
+}
+		
+html, body {
+  	width: 100%;
+  	min-height: 100vh;
+  	margin: 0;
+  	padding: 0;
+	background-image: linear-gradient(#1e5263, #899b30);
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	font-family: Raleway, serif;
+}
+		
+#box1 {
+  height: 500px;
+  width: 1000px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+  border-radius: 15px;
+  position: absolute;
+  margin: auto;
+  margin-top: 150px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+
+#contenttext {
+  padding: 35px;
+  margin: 10px auto;
+  padding-top: 0;
+  text-align: justify;
+}
+
+#contentimage img {
+  width: 50%;
+  height: 500px;
+  float: right;
+  margin: 0;
+  margin-left: 35px;
+  padding: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#content {
+  margin: auto;
+  padding: 25px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#content h1 {
+  text-align: center;
+}
+
+#contenttext input[type=text]{
+  width: 200px;
+  margin: 5px;
+  margin-left: 0px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  border-bottom: 2px solid grey;
+}
+
+#contenttext input[type=number]{
+  width: 200px;
+  margin: 5px;
+  margin-left: 0px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  border-bottom: 2px solid grey;
+}
+
+input[type=submit] {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+input[type=submit]:focus{
+  outline:none;
+}
+
+input[type=number]:focus{
+  outline:none;
+}
+
+#contenttext select {
+    width: 200px;
+    padding: 10px;
+    margin:5px;
+    margin-left: 0px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+input[type=submit]:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+  		
+#contenttext input[type=text]:focus{
+  	outline: none;
+  	border-bottom: 2px solid black;
+}
+
+.containertab{
+  display: flex;
+  justify-content: center;
+  margin-top: 550px;
+}
+
+.tablink {
+    background-color: #555;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    float: left;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 550px;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+.containertabcontent{
+  width: 100%;
+  margin: auto;
+  margin-top: 150px;
+  position: absolute;
+}
+
+.tabcontent {
+    width: 1000px;
+    height: 300px;
+    color: white;
+    display: none;
+    padding: 50px;
+    margin:auto;
+    text-align: center;
+}
+
+#Insert {
+  background-color:rgb(110,127,128);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#Search {
+  background-color:rgb(83,104,120);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}

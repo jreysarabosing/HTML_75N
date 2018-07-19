@@ -1,0 +1,134 @@
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
+div.container {
+  	font-family: Raleway;
+ 	margin: 0 auto;
+  	padding: 20px;
+  	text-align: left;
+  	position: fixed;
+  	top: 0;
+  	width: 100%;
+  	z-index: 3;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+
+div.container a {
+  	color: #fff;
+  	text-decoration: none;
+  	font: 20px Raleway;
+  	margin: 0px 10px;
+  	padding: 10px 10px;
+  	position: relative;
+  	z-index: 0;
+  	cursor: pointer;
+}
+
+div.container a.activenav{
+  	color: white;
+}
+		
+.green {
+	background: #1e5263;
+}
+		
+div.highlightTextIn a:before {
+	position: absolute;
+    color: #FFF;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+} 
+
+div.highlightTextIn a:hover:not(.activenav):before {
+	transform: scale(1);
+	opacity: 1;
+}
+		
+div.highlightTextIn a {
+	color: rgba(0, 0, 0, 0.4); 
+}
+		
+div.highlightTextIn a:before {
+	transform: scale(1.2);
+}
+		
+html, body {
+  	width: 100%;
+  	min-height: 100vh;
+  	margin: 0;
+  	padding: 0;
+	background-image: linear-gradient(#1e5263, #899b30);
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	font-family: Raleway, serif;
+}
+		
+#box1 {
+  width: 1000px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+  border-radius: 15px;
+  position: absolute;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+  
+#contenttext {
+  padding: 35px;
+  margin: auto;
+  padding-top: 0;
+  text-align: justify;
+}
+
+#content {
+  margin: auto;
+  padding: 25px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#content h1 {
+  text-align: center;
+}
+
+#contenttext2 input{
+  margin: auto;
+  margin-bottom: 20px;
+  width: 20%;
+  border: none;
+  border-bottom: 2px solid grey;
+}
+
+input[type=submit] {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+input[type=submit]:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
+  		
+#contenttext input:focus {
+  	outline: none;
+  	border-bottom: 2px solid black;
+}
+

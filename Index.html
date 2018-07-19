@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+	<title>CSGO Tactics</title>
+	<link rel="icon" href="img/icon2.png">
+	<link rel="stylesheet"  type="text/css" href="MasterStyle.css">
+</head>
+<header>
+	<div class="container green highlightTextIn">
+  		<a alt="HOME" class="activenav" href="Index.html">HOME</a>
+  		<a alt="PRODUCTS" href="Products.html">PRODUCTS</a>
+  		<a alt="SIGN UP" href="SignUp.html">SIGN UP</a>
+  		<a alt="CONTACT US" href="ContactUs.html">CONTACT US</a>
+  		<a alt="LOG IN" href="LogIn.php">LOG IN</a>
+	</div>
+</header>
+<body>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+    		<img class="slideshowImages" src="img/MapOverview.jpg">
+    		<div class="slideshowText">CSGO Tactics</div>
+  		</div>
+  		<div class="mySlides fade">
+    		<img class="slideshowImages" src="img/Nuke.jpg">
+    		<div class="slideshowText">Nuke</div>
+  		</div>
+  		<div class="mySlides fade">
+    		<img class="trioImages" src="img/Inferno.jpg">
+    		<div class="slideshowText">Inferno</div>
+  		</div>
+  		<div class="mySlides fade">
+    		<img class="slideshowImages" src="img/Mirage2.jpg">
+    		<div class="slideshowText">Mirage</div>
+  		</div>
+  		<div class="mySlides fade">
+    		<img class="slideshowImages" src="img/Dust2.jpg">
+    		<div class="slideshowText">Dust II</div>
+  		</div>
+  		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<script type="text/javascript" src="IndexScript.js"></script>
+	<br>
+	<div style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1)"></span> 
+  		<span class="dot" onclick="currentSlide(2)"></span> 
+  		<span class="dot" onclick="currentSlide(3)"></span>
+  		<span class="dot" onclick="currentSlide(4)"></span> 
+  		<span class="dot" onclick="currentSlide(5)"></span> 
+	</div>
+	<br><br><br>
+	<div class="boxLeft">
+		<img src="img/BlackLogo.jpg" class="boxImage right">
+		<h1 class="boxHeader">History</h1>
+		<div class="boxLeftContent">
+			The story of this website all started with Counter Strike Global Offensive, a popular multiplayer First Person Shooter. From there, ideas of teaching new and old players of the game became the basis for this website, CSGO Tactics. It provides useful and up-to-date information regarding game tactics, mechanics, and even beginner lessons for those just getting into the game.
+		</div>
+	</div>
+	<br><br><br>
+	<div class="boxRight">
+		<img src="img/Pro2.png" class="boxImage left">
+		<h1 class="boxHeader">Content</h1>
+		<div class="boxRightContent">
+			<li>Tactics</li>
+			<li>Strats</li>
+			<li>Spray Patterns</li>
+			<li>Smokes & Flashes</li>
+			<li>And much more!</li>
+		</div>
+	</div>
+	<br><br><br>
+	<div class="boxLeft succeedingBoxes">
+		<img src="img/Ranks1.png" class="boxImage right">
+		<h1 class="boxHeader">Newsletter</h1>
+		<div class="boxLeftContent">
+			Sign up for our weekly newsletter! You will receive all the latest news and updates regarding Counter Strike: Global Offensive.
+			<br>
+			<input type="text" class="textInput" placeholder="First Name">
+			<input type="text" class="textInput" placeholder="Last Name">
+			<input type="text" class ="textInput" id="longInput" placeholder="E-mail Address"><br><br>
+			<input type="submit" class="submitButton" value="Submit">
+ 		</div>
+	</div>
+	<br><br><br>
+</body>
+</html>
