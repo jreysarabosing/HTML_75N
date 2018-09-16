@@ -5,7 +5,7 @@
         header("Location: LogIn.php");  
     }
 ?>
-</!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>CSGO Tactics</title>
